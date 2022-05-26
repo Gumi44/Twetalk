@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TweTalk - Timeline </title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+
+        <div class="modal-body">
+			<form method="post" action="php/postar.php"> 
+				<div class="form-group">
+				  <textarea class="form-control forms" id="post" style="resize: none; padding: 10px; height: 300px;" maxlength="240"
+				  placeholder="Deixe sua postagem:" name="postagem" required></textarea>
+				  <span class="caracteres">240</span> Caracteres restantes
+				</div>	
+				<div> <img src="images/icons/emoji.png" id="emoji" /> </div>
+				<div class="row" style="display: none">
+					<button type="button" class="button btn btn-sm">😁</button>
+					<button type="button" class="button btn btn-sm">😂</button>
+					<button type="button" class="button btn btn-sm">😃</button>
+					<button type="button" class="button btn btn-sm">😄</button>
+					<button type="button" class="button btn btn-sm">😅</button>
+					<button type="button" class="button btn btn-sm">😆</button>
+					<button type="button" class="button btn btn-sm">😉</button>
+					<button type="button" class="button btn btn-sm">😊</button>
+					<button type="button" class="button btn btn-sm">😋</button>
+					<button type="button" class="button btn btn-sm">😌</button>
+					<button type="button" class="button btn btn-sm">😍</button>
+					<button type="button" class="button btn btn-sm">😏</button>
+					<button type="button" class="button btn btn-sm">😒</button>
+					<button type="button" class="button btn btn-sm">😓</button>
+					<button type="button" class="button btn btn-sm">😔</button>
+					<button type="button" class="button btn btn-sm">😖</button>
+					<button type="button" class="button btn btn-sm">😘</button>
+					<button type="button" class="button btn btn-sm">😚</button>
+					<button type="button" class="button btn btn-sm">😜</button>
+					<button type="button" class="button btn btn-sm">😝</button>
+					<button type="button" class="button btn btn-sm">😞</button>
+					<button type="button" class="button btn btn-sm">😠</button>
+					<button type="button" class="button btn btn-sm">😢</button>
+					<button type="button" class="button btn btn-sm">😤</button>
+					<button type="button" class="button btn btn-sm">😥</button>
+					<button type="button" class="button btn btn-sm">😨</button>
+					<button type="button" class="button btn btn-sm">😩</button>
+					<button type="button" class="button btn btn-sm">😪</button>
+					<button type="button" class="button btn btn-sm">😫</button>
+					<button type="button" class="button btn btn-sm">😭</button>
+					<button type="button" class="button btn btn-sm">😰</button>
+					<button type="button" class="button btn btn-sm">😱</button>
+					<button type="button" class="button btn btn-sm">😲</button>
+					<button type="button" class="button btn btn-sm">😳</button>
+					<button type="button" class="button btn btn-sm">😵</button>
+					<button type="button" class="button btn btn-sm">😷</button>
+					<button type="button" class="button btn btn-sm">😸</button>
+					<button type="button" class="button btn btn-sm">😹</button>
+					<button type="button" class="button btn btn-sm">😺</button>
+					<button type="button" class="button btn btn-sm">😻</button>
+					<button type="button" class="button btn btn-sm">😼</button>
+					<button type="button" class="button btn btn-sm">😽</button>
+					<button type="button" class="button btn btn-sm">😾</button>
+					<button type="button" class="button btn btn-sm">😿</button>
+					<button type="button" class="button btn btn-sm">🙀</button>
+					<button type="button" class="button btn btn-sm">🙅</button>
+					<button type="button" class="button btn btn-sm">🙆</button>
+					<button type="button" class="button btn btn-sm">🙇</button>
+					<button type="button" class="button btn btn-sm">🙈</button>
+					<button type="button" class="button btn btn-sm">🙉</button>
+					<button type="button" class="button btn btn-sm">🙊</button>
+					<button type="button" class="button btn btn-sm">🙋</button>
+					<button type="button" class="button btn btn-sm">🙌</button>
+					<button type="button" class="button btn btn-sm">🙍</button>
+					<button type="button" class="button btn btn-sm">🙎</button>
+					<button type="button" class="button btn btn-sm">🙏</button>
+				</div>
+						
+				
+				<div class="form-group form-check" style="text-align: right">
+				<input type="submit" class="btn btn-success forms formz" value="Postar" />
+        </div>
+			</form>
+        </div>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  
+		  <script>
+			$(document).ready(function(){
+			  $("#emoji").click(function(){
+				$(".row").toggle();
+			  });
+			});
+		</script>
+		  
+  
+  
+      <script>        
+                        
+            $(".button").click(function() 
+            {
+                var emoji = $( this ).text();
+                $('#post').val($('#post').val() + emoji);
+            }); 
+    </script>  
+  
+  
+  
+  <script>
+	        $(document).on("keydown", "#post", function () {
+            var caracteresRestantes = 240;
+            var caracteresDigitados = parseInt($(this).val().length);
+            var caracteresRestantes = caracteresRestantes - caracteresDigitados;
+            
+            $(".caracteres").text(caracteresRestantes);
+        });
+  
+  </script>
+
+  </body>
+</html>
+	
+	
+	
