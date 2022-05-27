@@ -73,7 +73,7 @@
 		
 		//cadastra
 		public function cadastraUser($a,$b,$c,$d){
-			$sql = "INSERT INTO $this->tabela(usar,pass,status,email) VALUES(?,?,?,?)";
+			$sql = "INSERT INTO $this->tabela(user,pass,status,email) VALUES(?,?,?,?)";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->bind_param('ssss',$a,$b,$c,$d);
 			$stmt->execute();
