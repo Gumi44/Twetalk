@@ -1,9 +1,9 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
 	Abstract Class conexao{
-		public $servidor = 'localhost';
+		public $servidor = '94.88.112.42';
 		public $user = 'root';
-		public $pass = 'usbw';
+		public $pass = '1q2w3e4r5t';
 		public $banco = 'twetalk';
 		public $conn;
 		
